@@ -1,0 +1,1 @@
+TODO - add note discussing what we could call a diffusion process in the context of [[Diffusion models]] and [[Stochastic Process]]

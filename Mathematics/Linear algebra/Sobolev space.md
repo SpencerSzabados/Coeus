@@ -1,0 +1,1 @@
+A Sobolev space is a [[Vector space#Normed vector spaces|normed vector space]] of functions where the norm is of the form of a combination of the standard $L^p$-norms (see [[Lebesgue integration]]) of functions together with their derivatives upto a specified order; these spaces belong to [[Banach space|Banach spaces]] under the relaxation of the definition of a derivative.

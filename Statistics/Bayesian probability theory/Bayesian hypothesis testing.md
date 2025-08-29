@@ -1,0 +1,8 @@
+[[Hypothesis testing]] problems can be formulated in a [[Bayesian probability theory|bayesian model]]. The posterior distribution may be used to calculate the probabilities that $H_0$ and $H_1$ are true; namely, for posterior distribution $p(\theta|\vec{x})$ we say $P(\theta\in \Theta_0|\vec{x})=P(H_0\text{ is true }|\vec{x})$ and $P(\theta\in \Theta^c_0|\vec{x})=P(H_1 \text{ is true }|\vec{x})$. 
+
+This formulation differs from that of _classical statistics_, as traditionally $\theta$ is considered to have a unknown fixed true value. Whereas in the Bayesian formulation of a hypothesis test, the probabilities of a unknown $\theta$ having any particular value depend on the sample $\vec{x}$; that is, they inferred from the sample data.
+
+More specifically, a Bayes hypothesis test might take the following form.
+
+**Definition: (Bayes hypothesis test)** Let $\vec{X}=(X_1,\dots,X_N)$ be a iid sample from a population with pdf (or pmf) $f(\vec{x}|\theta)$ for $\theta\in \Theta$, and suppose we have the posterior probability $p(\theta|\vec{X})$. Suppose we have the hypothesizes $H_0:\theta\in \Theta_0\subset \Theta$ and $H_1:\theta\in \Theta^c_0$. Then a Bayesian hypothesis tester may chose to use the posterior distribution to decide to accept $H_0$, if $P(\theta\in \Theta_0|\vec{X})\geq P(\theta\in \Theta^c_0 | \vec{X})$ and to reject $H_0$ otherwise; i.e., the rejection region is $\{\vec{x}|P(\theta\in \Theta^c_0|\vec{x})>\frac{1}{2}\}$. Alternatively, to avoid presumptuously rejecting $H_0$, we might decide to reject $H_0$, if $P(\theta\in \Theta_0^c|\vec{x})>c$ for some larger constant $c$, e.g., $c=0.99$.
+

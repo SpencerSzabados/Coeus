@@ -1,0 +1,5 @@
+Machine learning models that takes input or output data sequentially said to be sequential learning methods, e.g., text streams, audio clips, video clips, time-series data, and other types of sequential data are examples of sequential data, see [analyticsindiamag](https://analyticsindiamag.com/a-tutorial-on-sequential-machine-learning/). More specifically, sequential data is reliant on order of delivery, one piece of data might be dependent both on those before it but also after it.
+
+If the training data set is sufficiently large (say for [[Supervised learning]] problems) or new observations arrive in a continuous stream, sequential (or on-line) algorithms are worth consideration, which perform limited updates to the learning parameters using subsets of the total available training data (the new training data).
+
+Sequential modelling is the process of producing a sequence of values based on a set (particularly a sequence) of input values; e.g., text prediction (where the next word in a sentence is predicted based on the previous few words), text mining and sentiment analysis ([[Natural language processing]]), machine translation etc.

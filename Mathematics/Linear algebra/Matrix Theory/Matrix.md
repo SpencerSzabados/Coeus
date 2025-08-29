@@ -1,0 +1,1 @@
+In linear algebra Matrices realise two different objects: [[Linear transformations]] (linear maps - and typically only utilized in finite dimensional vector spaces) and [[Tensor|tensors (or bilinear forms)]]. 

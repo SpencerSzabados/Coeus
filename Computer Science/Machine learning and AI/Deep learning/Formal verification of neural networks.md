@@ -1,0 +1,7 @@
+The internal functioning (or reasoning) of [[Artificial neural networks|neural networks]], particularly deep networks, that leads to a particular decision is not necessarily apparent from construction. Therefore, how can be assign trust (e.g., estimate of certainty, robustness to perturbations, etc.) to decisions made by a neural network? One way to address this question is to define a set of properties that must be satisfied by the network during operation. Verifying whether or not a neural network fulfills the properties we set forth then informs us about the underlying function the neural network represents (has learned). See [[@Narodytska_2018]], [Kumar](http://mpawankumar.info/tutorials/vmcai2019/). 
+
+The idea of formal verification for neural networks is to encode the network along with the property we want to verify it satisfies into a formal statement, using [[Linear programming|(integer) linear programming]] (ILP), satisfiability modulo theory (SMT), or boolean satisfiability (SAT) using a special class of neural networks called binarized neural networks. If such an encoding provides an exact representation of the network then this can be studied for properties relating to it.
+
+Some properties of interest are the following:
+
+**Definition: (Local robustness)** Given an input $x$ to the ANN $A$, in order for $A$ to be local rebuts we require there to exists a perturbation $\delta>0$ to the input $y=x+\delta$ such that the predicted results from $A$ near $x$ is similar, i.e., $|A(x)-A(y)|\leq \epsilon$ for any $\epsilon$.

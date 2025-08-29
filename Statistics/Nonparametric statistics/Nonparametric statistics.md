@@ -1,0 +1,5 @@
+Nonparametric statistics is a branch of statistics focusing on the development of methods that are either distribution-free or have a specified distribution with unspecified parameters; meaning, assumptions of the underlying data generation mechanisms are kept to a minimum, or are excluded all together from consideration during analysis. Nonparametric tests are best suited for data that violate the basial assumptions of other parametric tests. 
+
+In the [[Overview of machine learning|machine learning]] context, models with a fixed number of parameters are said to be parametric while those where the number of parameters grows with the amount of data are said to be nonparametric. [[@Murphy_2012]]. 
+
+Many nonparametric methods suffer from decreased tenability as the dimension of the data increases, the so called _curse of dimensionality_. The main way to escape increasing complexity due to dimensionality is to make assumptions on the underlying data distributions (assuming a probability distribution); these assumptions are known as _inductive bias_ and are often embodied in parametric models.

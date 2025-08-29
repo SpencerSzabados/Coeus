@@ -1,0 +1,1 @@
+Much of the following is taken from: [Mpatacchiola](https://mpatacchiola.github.io/blog/2021/01/25/intro-variational-inference.html) https://ermongroup.github.io/cs228-notes/inference/variational/ https://www.cs.princeton.edu/courses/archive/fall11/cos597C/lectures/variational-inference-i.pdf

@@ -1,0 +1,1 @@
+**Theorem: (Fundamental Counting Theorem)** If a job consists of $k$ sperate tasks, the $i$-th of which can be done in $n_i$ different ways, for $i=1,\dots,k$, then the entire job can be done in $\Pi_{i=1}^kn_i$ ways.

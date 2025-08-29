@@ -1,0 +1,1 @@
+Optical flow, from the computer graphics and computer vision perspective, is the estimation and detection of motion within a sequence of images. See [Wiki](https://en.wikipedia.org/wiki/Optical_flow).

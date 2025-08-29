@@ -1,0 +1,1 @@
+**Definition: (Hamilton graph)** A graph is _Hamilton (or Hamiltonian)_ if it has a Hamilton cycle; that is, a graph $G$ is Hamiltonian if it posses a cycle that visits every vertex of the graph.

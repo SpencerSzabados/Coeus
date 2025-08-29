@@ -1,0 +1,1 @@
+**Definition: (Isomorphism)** Let $G$ and $H$ be graphs. A bijection $f:V(G)\to V(H)$ is an isomorphism if and only if $f(u)f(v)\in E(H)$.

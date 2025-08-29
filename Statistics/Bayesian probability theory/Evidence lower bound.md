@@ -1,0 +1,8 @@
+The evidence lower bound (ELB) is a [[Bayesian probability theory|Bayesian]] lower bound on the [[Maximum likelihood#^79a115|log-likelihood]] for observed data, and is commonly used in the training of [[Generative models]] (i.e., [[Push-forwards models]]) as computing the exact [[Maximum likelihood]] or [[Bayes likelihood]] is typically infeasible. [Wiki](https://en.wikipedia.org/wiki/Evidence_lower_bound). 
+
+
+# Overview
+This bound originates from [[Variational Bayesian inference]] methods; specifically for the problem of fitting distributions given a random sample. Supposing we are given a observable random variable $X$ that follows an unknown distribution $p$ we can attempt to fit a best fit destitution for $X$ by defining a hypothesis space of possible distributions (typically a parametric family) $\{q_i\}_{i\in I}$ and solving for $\arg\min_q L(q,p)$, where $L$ is some [[Point estimation#^45314f|loss function]] (e.g., [[Information theory#Kullback-Leibler divergence|Kullback-Libler divergence]] between an estimate of $p$ and $q_i$). 
+
+**Definition: (Evidence lower bound)** Let $X$ and $Y$ be [[Random variables]] that are jointly distributed according to $p$. Then for any sample $X=x$ and secondary distribution $q$ we have $$\ln p_X(x) \geq E_{y\sim q}\left[\ln\frac{p(x,y)}{q(y)}\right],$$where $\ln p(x)$ is called the _evidence_ of $x$ (from variational Bayesian methods the distribution $p_X(X)$ is called the evidence). This lower bound is also sometimes written as $$\ln p_X(x) \geq E_{y\sim q(\cdot|x)}\left[\ln\frac{p(x,y)}{q(y|x)}\right]$$in terms of a conditional distribution on $X$.
+

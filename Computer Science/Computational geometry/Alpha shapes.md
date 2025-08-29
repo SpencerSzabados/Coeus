@@ -1,0 +1,1 @@
+An $\alpha$-shape is a sequence of joined piecewise-linear simple curves associated with the shape of a finite set of points in the plane. Seen as a generalization of convex hulls.

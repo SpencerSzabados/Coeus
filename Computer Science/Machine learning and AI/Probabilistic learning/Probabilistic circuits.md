@@ -1,0 +1,1 @@
+Probabilistic circuits (PCs) are computational graph models for modeling probability distributions, [github](https://arranger1044.github.io/probabilistic-circuits/). PCs generalize [[Sum-product networks]], and arithmetic circuits, among others. 

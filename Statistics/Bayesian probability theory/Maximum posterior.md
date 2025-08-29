@@ -1,0 +1,9 @@
+Maximum posterior, or more formally _Maximum a posteriori (MAP)_, estimate is an estimate of a unknown quantity that equals the mode (most frequent value) of the posterior probability, much like [[Maximum likelihood]].  
+
+
+## Bayes risk
+**Definition: (Bayes risk)** If we have [[Fundamentals of probability theory#^4b7ad7|prior distribution]] $p(\theta)$, we can compute the average risk of an estimator $W$ of $\theta$ as $$\int_\Theta R(\theta,W)p(\theta)\, d\theta,$$where $R$ is the risk function induced by a chosen [[Point estimation#^45314f|loss function]].
+
+We can find the Bayes decision rule, i.e., the estimator that minimizes risk and therefore loss, given prior $p(\theta)$ as follows. For $\vec{X}\sim f(\vec{x}|\theta)$ and $\theta\sim p$, the Bayes risk of a decision rule $W$ can be written as $$\int_\Theta R(\theta,W)p(\theta)\, d\theta = \int_\Theta\left(\int_{\mathcal{X}}L(\theta,W(\vec{x}))f(\vec{x}|\theta)\, dx \right)p(\theta)\, d\theta.$$Then for the posterior distribution $p(\theta|\vec{x})$ of $\theta$ and marginal distribution $m(\vec{x})$ of $\vec{X}$, we can write $f(x|\theta)p(\theta)=p(\theta|\vec{x})m(x)$. Substituting this into the integral gives $$\int_\Theta R(\theta,W)p(\theta)\, d\theta = \int_\mathcal{X}\left( \int_\Theta L(\theta,W(\vec{x}))p(\theta|\vec{x})\right)m(\vec{x})\, dx.$$Notice the quantity in round brackets is the expected value of the loss function $L$ with respect to the posterior distribution, called the _posterior expected loss_, and is a function of only $\vec{x}$. Thus, for each $\vec{x}$, if we chose $W$ such that the posterior expect loss is minimized, then we will minimize the entire Bayes risk function.
+
+This process is much simpler, or more unified, that those classical methods we must apply to find good unbiased estimators. Even if the minimization of the posterior expected loss (inner integral) cannot be done analytically, it can be carried out numerically to similar effect.

@@ -1,0 +1,2 @@
+AI and ML systems utilised in safety-critical systems need to be able to perform complex reasoning under uncertainty with approximate guarantees (being reliable). Tractable probabilistic models (TPMs), what I primarily consider when thinking about probabilistic learning, have been designed with these goals (concerns) in mind, [WTPM](https://tractable-probabilistic-modeling.github.io/tpm2022/). e.g., [[Probabilistic neural networks]], [[Sum-product networks]], [[Normalizing flows]], etc.
+

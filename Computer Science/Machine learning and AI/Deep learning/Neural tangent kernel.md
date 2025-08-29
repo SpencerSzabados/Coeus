@@ -1,0 +1,1 @@
+https://en.wikipedia.org/wiki/Neural_tangent_kernel
