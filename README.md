@@ -1,7 +1,7 @@
 # Obsidian Vault
 
 ## Description
-This repository contains a backup of my primary [Obsidean](https://obsidian.md/) Vault that was developed during my Graduate Degree (2023-01 to 2025-01) in Machine Learning at the University of Waterloo and tail end of my Undergraduate Degree. In addition to the central notes on Statistics and Machine Learning, there are various notes about miscellaneous papers I've read, etc.
+This repository contains a backup of my primary [Obsidian](https://obsidian.md/) Vault that was developed during my Graduate Degree (2023-01 to 2025-01) in Machine Learning at the University of Waterloo and tail end of my Undergraduate Degree. In addition to the central notes on Statistics and Machine Learning, there are various notes about miscellaneous papers I've read, etc.
 
 I am not distributing the content of `/references/figures/` due to licensing of some source materials. Figures and images will need to be sourced on your own from the references.
 
