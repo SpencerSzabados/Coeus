@@ -21,8 +21,6 @@ A useful property of maximum likelihood estimators is that known as the _invaria
 
 
 ## Maximum likelihood and least squares
-TODO - correct notation
-
 The error function of least squares, that is the sum-of-squared error, can be motivated as the maximum likelihood solution provided we assume the given sample points come from a certain (known) distribution. [[@Bishop_2006]]
 
 Particularly, suppose the sets $X=\{x_1,x_2,\dots,x_N\}$ and $Y=\{y_1,y_2,\dots,y_N\}$ are given matched pair observation data; that is $x_i$ is associated with the value $y_i$ for each $i=1,2,\dots,N$ by some unknown underlying function that we are seeking to determine (or rather approximate). Denote by $y(x,\vec{w})$ this underlying function, and assume $Y$ is generated according to the rule $y_i = y(x_i,\vec{w})+\epsilon$, where $\epsilon$ represents noise in measurement which is assumed to be a standard normal distribution random variable with precision (inverse variance) $\kappa = 1/\sigma^2$.  Under these assumptions, it can be seen that for any values of $x$ and $y$, $$P(y|x,\vec{w},\kappa) = \mathcal{N}(y|y(x,\vec{w}),\kappa^{-1}).$$This follows from the fact that, for a square loss (error) function the optimal [[Fundamentals of prediction|prediction]] for a new value is given by the conditional mean of the target variable. Which is given in this case by $E[y|x] = \int yp(y|x)dy = y(x,\vec{w})$ for any $x\in X$ and $y\in Y$. 

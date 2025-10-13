@@ -1,23 +1,17 @@
-Much of the following notes are taken from [[@Apostol_1973]], unless otherwise noted.
+---
+doc type: Note
+authors: Spencer Szabados
+date: 2025-11-10
+tags:
+  - calculus
+  - real_analysis
+  - integration
+references:
+  - "[[@Apostol_1973]]"
+---
+---
 
-# Preliminaries
-
-**Definition: (Iterval parition)** A partition, $P$, of an interval $[a,b]$ is a finite set of points $P=\{x_0,x_1,\dots,x_n\}$ with $a=x_0<x_1<x<\cdots<x_n=b$. 
-
-A partition $P'$ is said to be _finer_ (or a _refinement of_) than another partition $P$, over the same interval, if $P\subseteq P'$; Intuitively this means, $\inf_{x_i,x_j\in P'}\{|x_i-x_j|\}\leq \inf_{x_i,x_j\in P}\{|x_i-x_j|\}$. The norm of a partition, denoted $\|P\|$, is equal to the largest subinterval length in the partition.
-
-The set of all partition over a interval $[a,b]$ is denoted $\mathcal{P}[a,b]$. 
-
-# The Riemann Integral
-Beginning with the most well known and simplest integral definition, the _Riemann sum formulation of the integral_.
-
-**Definition: (Riemann Integral)** 
-
-The Riemann integral is the reduction of the Riemann-Stieltjes integral (below) with respect to the measure $\alpha=x$ (identity)
-
-
-## Lebesgue's criterion for existence of Riemann Integrals.
-[[Functions of bounded variation and rectifiable curves]]
+The Riemann-Stieltjes integral is a slight generalisation of the (identity measure) [[Riemann integration#^def40d|Riemann integral]].
 
 # The Riemann-Stieltjes Integral
 A more general concept is the _Riemann-Stieltjes integral_, which incorporates a variable measure function, opposed to the previous formulation that uses the spaces metric.

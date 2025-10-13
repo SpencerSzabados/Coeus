@@ -1,4 +1,15 @@
-A distribution family is indexed by one or more parameters, which allow us to vary certain characteristics of the distribution without changing the underlying equations. Distribution parameters are often emphasized by being written in the associated pmf (or cdf, pdfs, expectations, etc) preceded by a "|".
+---
+doc type: Note
+authors: Spencer Szabados
+date:
+tags:
+  - probability_distributions
+  - statistics
+references:
+---
+---
+
+A (parametric) distribution family is indexed by one or more parameters, which allow us to vary certain characteristics of the distribution without changing the underlying equations. Distribution parameters are often emphasized by being written in the associated pmf (or cdf, pdfs, expectations, etc) preceded by a "|".
 
 
 # Discrete distributions 
@@ -50,9 +61,9 @@ The normal distribution and distribution associated with play large roles in sta
 [[Statistical inequalities and identities#^3a15e0|Stein's Lemma]] makes it easy to calculate higher-order moments of a normal distribution. If $X\sim \mathcal{N}(\theta,\sigma^2)$, then for example, $$\begin{align} E[X^3] &= E[X^2(X-\theta+\theta)]\\ &= E[X^2(X-\theta)]+\theta E[X^2]\\ &=2\sigma^2E[X]+\theta E[X^2]\\ &=3\theta\sigma^2+\theta^3. \end{align}$$
 
 ### Approximating the binomial distribution using normal distribution 
-If $X\sim bionmial(n,p)$, then $E[X]=np$ and $Var[X]=np(1-p)$, and under _suitable conditions_, the distribution of $X$ can be approximated by a normal random variable with mean $\mu=np$ and variance $\sigma^2=np(1-p)$. The aforementioned "suitable conditions" are that $n$ should be large enough (discrete) as to resemble a normal distribution (many intermediate values) and $p$ should not be far removed from $0.5$. A conservative rule of thumb to follows is to require $min\{np,np(1-p)\}\geq 5$. 
+If $X\sim bionmial(n,p)$, then $E[X]=np$ and $Var[X]=np(1-p)$, and under _suitable conditions_, the distribution of $X$ can be approximated by a normal random variable with mean $\mu=np$ and variance $\sigma^2=np(1-p)$. The aforementioned "suitable conditions" are that $n$ should be large enough (discrete) as to resemble a normal distribution (many intermediate values) and $p$ should not be far removed from $0.5$. A rule of thumb to follows is to require $min\{np,np(1-p)\}\geq 5$. 
  
-See [[Density estimation#Parameter estimation]] for how to fit parameters for the normal distribution and a more detailed view of parametric distribution fitting.
+See [[Density estimation#Parameter estimation]] for how to fit parameters for the normal distribution to best approximate a target Binomial.
 
 
 ### Bivariate normal distribution

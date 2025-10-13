@@ -7,6 +7,7 @@ tags:
   - physics
   - random_variables
 references:
+  - "[[@Dotsenko_1994]]"
 ---
 ---
 
