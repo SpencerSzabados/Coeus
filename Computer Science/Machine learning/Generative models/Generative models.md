@@ -15,7 +15,7 @@ Generative models have a lot of overlap with [[Overview of probabilistic learnin
 Generative models can be broken broadly into the following categories, with most models attempting to approximate the [[Push-forwards models#^599c6e|push-forwards measure]]. 
 
 + [[Push-forwards models]]
-     + [[Variational autoencoder]]
+     + [[Computer Science/Machine learning/Generative models/Variational autoencoder]]
      + [[Generative adversarial networks]]
      + [[Normalizing flows]] (or more generally neural flows)
      + [[Diffusion models]]

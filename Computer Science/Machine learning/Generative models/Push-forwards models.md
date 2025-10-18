@@ -14,7 +14,7 @@ ___
 Push-forwards models is a general class of method motivated from wanting to generate samples of the underlying distribution that our training data originates from without having to collect additional "true" sample data. 
 
 **Examples of push-forward networks:** 
-  + [[Variational autoencoder]]
+  + [[Computer Science/Machine learning/Generative models/Variational autoencoder]]
   + [[Normalizing flows]]
       +  [[Diffusion models]] 
   + [[Generative adversarial networks]]

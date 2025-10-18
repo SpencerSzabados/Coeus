@@ -5,7 +5,7 @@ year: 2017
 ---
 
 # Overview 
-The paper proposes a kind of [[Variational autoencoder]], called a variational deep embedding model, with a [[Mixture model]] as the latent space for the embedding. This model, like with VAEs, uses sperate encoder and decoder networks. 
+The paper proposes a kind of [[Computer Science/Machine learning/Generative models/Variational autoencoder]], called a variational deep embedding model, with a [[Mixture model]] as the latent space for the embedding. This model, like with VAEs, uses sperate encoder and decoder networks. 
 
 The main motivations for using a mixture model for the latent space embedding is in attempting to force the network to better [[Classification and clustering#Clustering|cluster]] observations through embeddings. It is thought such a model would more accurately generate samples belonging to specific subclasses within the distribution with these regions being better separated within the latent space.
 
