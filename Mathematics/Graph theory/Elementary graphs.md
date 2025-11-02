@@ -1,5 +1,5 @@
 
-**Definition:(Simple graph)**
+**Definition:(Simple graph)** ^1b6b29
 
 **Definition: (Walk)** If $G=(V,E)$ is a graph, a walk in $G$ is a sequence of vertices (and edges) $v_1,\dots,v_k$ such that $v_{i-1}v_i\in E$ for all $i\in \{1,\dots,k\}$.
 

@@ -8,7 +8,7 @@ tags:
 ---
 ---
 
-**Equivalences: (Invertible matrices)** If $A$ is a invertible matrix (singular) then the following are equivalent: ^afc451
+**Equivalences: (Invertible matrices)** If $A$ is a invertible matrix (non-singular) then the following are equivalent: ^afc451
  1) $det(A)\neq 0$; 
  2) $A$ can be written as a product of elementary matrices;
  3) The RREF of $A$ is $I$;

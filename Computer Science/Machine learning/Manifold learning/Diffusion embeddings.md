@@ -13,10 +13,9 @@ references:
 ---
 ___
 
-# Overview
-Diffusion maps are a form of non-linear [[Manifold learning]] based on optimizing a [[Stochastic Process]] constructed from the assumption that the datapoints in $Y$ are part of a random walk.
-See [Tianlin Liu](https://tianlinliu.com/2021/05/29/difussion-maps/) for a detailed derivation.
+Diffusion maps are a form of non-linear [[Manifold learning]] based on optimizing a [[Stochastic Process]] constructed from the assumption that the datapoints in $Y$ are part of a random walk. See [Tianlin Liu](https://tianlinliu.com/2021/05/29/difussion-maps/) for a detailed derivation.
 
+# Overview
 Given set $Y$ diffusion maps attempt to learn $\mathcal M$ by performing a random walk over a graph constructed over the data (somewhat similar to [[Simulated annealing process|simulated annealing]]). The idea is that as we take more steps along this walk different scales in the structure of the data is revealed, e.g., clusters of different scales are found. This method can also be understood as a form of approximating the solution to the eigenvalue problem, which seeks a solution to find a set of orthonormal basis functions $\psi_1,\dots,\psi_t$ for the learned manifold $\mathcal{M}$ given the sampling density $q$ of $Y$ such that $$q^{-1}(\nabla\cdot q(\nabla\psi_k(y))) = \lambda_k\psi_k(y).$$Diffusion maps make the assumption that $q$ is uniform (constant for all $y$) and therefore the above reduces to $$\nabla\cdot\nabla\psi_k(y)=\lambda_k\psi(y)$$and we approximate $\nabla\cdot\nabla$ by a kernel function (the Gaussian kernel is used below) treating the problem as a continuous signal reconstruction task. See [John_Harlim](https://www.sfb1294.de/fileadmin/user_upload/Spring_School_2019/John_Harlim_lecture_1.pdf), [Wiki](https://en.wikipedia.org/wiki/Discrete_Laplace_operator#Mesh_Laplacians).
 
 

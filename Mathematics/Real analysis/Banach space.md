@@ -1,8 +1,12 @@
 ---
 doc type: Note
 authors: Spencer Szabados
+date:
 tags:
   - real_analysis
+  - functional_analysis
+references:
+  - "[[@Apostol_1973]]"
 ---
 ---
 

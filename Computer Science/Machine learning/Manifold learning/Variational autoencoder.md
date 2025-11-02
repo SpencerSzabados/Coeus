@@ -12,7 +12,6 @@ ___
 
 Variational autoencoders are a kind of [[Generative models|generative model]], specifically a [[Push-forwards models|push-forwards model]], that consists of two coupled independently parametrized models that work in tandem. 
 
-
 # Overview
 We begin by exploring probabilistic autoencoders which serve as the support for variational autoencoders. 
 
@@ -45,8 +44,6 @@ Critically, as sampling $u$ from $p_U$ is stochastic process we cannot effective
 
 # Vartiational autoencoders as flows
 Variational autoencoders can be seen as a kind of [[Normalizing flows|flow model]] within the joint space (TODO)
-
-
 
 
 # Modeling different latent space (priors)
