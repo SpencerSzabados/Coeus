@@ -1,6 +1,8 @@
 .obsidian
 .trash
-References/figures/*
+.DS*
 
 config.json
 srs-data.json
+
+References/figures/*

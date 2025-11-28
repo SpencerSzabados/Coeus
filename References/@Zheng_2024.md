@@ -8,6 +8,7 @@ tags:
   - generative_models
 references:
   - "[[@Song_2023]]"
+  - https://arxiv.org/abs/2402.19159
 resource: unpublished
 ---
 ---
@@ -16,6 +17,7 @@ This paper seeks to improve the Consistency Distillation method proposed by [[@S
 
 The authors experimentally, and numerically, examine what steps in the CM distillation/sampling accumulate the most numerical error and frame their method in terms of addressing these sources of error; namely, targeting error from 1) Estimation errors in score prediction; 2) Distillation errors in CM training; 3) Discretization errors accumulated during repeat sampling due to trajectory misalignment. 
 [[@Wang_2024]] 
+
 # Primary results
 Begin by considering a common diffusion equations used. Let $p_0(x)$ denote the data distribution, $\mu$ and $\sigma$ be smooth scalar functions, and consider the [[Diffusion processes]] over $T>0$, $t\in[0,T]$ defined by the [[Stochastic differential equations]] $$dx_t = \mu(x_t,t)dt+\sigma(t)d\overrightarrow{W}_t;$$
 where the authors, unlike [[@Song_2023]], pick for the main body the VP-SDE parameters $$\mu(x_t,t)=\frac{dlog\alpha_t}{dt}\quad\text{ and }\quad \sigma(t)=\sqrt{\frac{ds^2_t}{dt}-2s^2_t\frac{dlog\alpha_t}{dt}}$$giving the forward transition kernel $$q_t(x_t|x_0)=\mathcal{N}(x_t; \alpha_tx_0, s^2_t\mathbb{I})$$ which has limiting distribution $\pi_T=\mathcal{N}(0,\mathbb{I})$. 
@@ -79,7 +81,7 @@ The authors only focus on distillation training, not self consistency, and prese
 
 The author go on to define a stochastic re-sampling method for selecting noise variance/schedule values during multi-step sampling.
 
-# Extraneous notes
+# Issues
 I note there is an error on p3 of this paper where the authors conflate the consistency condition with the boundary condition. 
 
 

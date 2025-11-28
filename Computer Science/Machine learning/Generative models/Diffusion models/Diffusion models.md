@@ -8,6 +8,7 @@ tags:
   - generative_models
   - flow
 references:
+  - "[[@Ho_2020]]"
 ---
 ___
 
