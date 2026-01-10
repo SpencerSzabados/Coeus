@@ -10,13 +10,14 @@ tags:
   - reinforcement_learning
 references:
   - https://openreview.net/pdf?id=7BQkXXM8Fy
+  - https://github.com/Josh00-Lu/DiffusionVeteran
 ---
 
 ---
 
 In this work the authors perform an empirical study over a bunch of different diffusion model architectures and training/sampling algorithms to try and determine what "general" design choices have the largest effects on boosting performance on long time horizon planning tasks. 
 
-The authors focus on offline RL training, as used in works like [[@Jain_2024]], and the two classes of model: diffusion policy models and diffusion planning (trajectory) models [[@Janner_2022]]. In the study the authors distinguish these by stating diffusion policy models only predict the next action (or action state pair) without using look ahead planning; however, I don't believe this correctly characterizes all diffusion policy methods. 
+The authors focus on offline RL training, as used in works like [[@Jain_2024]], and the two classes of model: diffusion policy models and diffusion planning (trajectory) models [[@Janner_2022]], [[@Tan_2025flow]]. In the study the authors distinguish these by stating diffusion policy models only predict the next action (or action state pair) without using look ahead planning; however, I don't believe this correctly characterizes all diffusion policy methods. 
 
 # Primary results
 The authors utilize the D4RL dataset (https://github.com/Farama-Foundation/D4RL) that contains dataset elements of the form $\tau_{t,t+1} = (s_t, a_t, s_{t+1}, r_t)$ with states $s_t$, actions $a_t$, and rewards $r_t$. Returns are computed over a trajectory (or sub-trajectory) using standard discounted rewards $R_t = \sum_{i=1}^h \gamma^ir_{t+i}$ for time horizon $h>0$.

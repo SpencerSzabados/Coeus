@@ -11,14 +11,14 @@ references:
 ---
 ---
 
-The Riemann-Stieltjes integral is a slight generalisation of the (identity measure) [[Riemann integration#^def40d|Riemann integral]].
+The Riemann-Stieltjes integral is a slight generalization of the (identity measure) [[Riemann integration#^def40d|Riemann integral]] and is natural to consider before [[Lebesgue integration]].
 
 # The Riemann-Stieltjes Integral
-A more general concept is the _Riemann-Stieltjes integral_, which incorporates a variable measure function, opposed to the previous formulation that uses the spaces metric.
+The _Riemann-Stieltjes integral_ incorporates a variable measure function, opposed to the previous formulation that uses the spaces metric.
 
-**Definition: (Riemann-Stieltjes Sum)** Let $P=\{x_0,x_1,\dots,x_n\}$ be a partition of $[a,b]$ and let $t_k$ be a point in the subinterval $[x_{k-1},x_k]$. A sum of the form $$S(P,f,\alpha) = \sum_{k=1}^nf(t_k)\Delta\alpha_k$$ is called a _Riemann-Stieltjes sum_ of $f$ with respect to a function $\alpha$, where $\Delta\alpha_k = \alpha(x_k)-\alpha(x_{k-1})$.   
+**Definition: (Riemann-Stieltjes Sum)** Let $P=\{x_0,x_1,\dots,x_n\}$ be a [[Riemann integration#^858e92|partition]] of $[a,b]$ and let $t_k\in [x_{k-1},x_k]$. A sum of the form $$S(P,f,\alpha) = \sum_{k=1}^nf(t_k)\Delta\alpha_k$$ is called a _Riemann-Stieltjes sum_ of $f$ with respect to a (continuous real valued) function $\alpha$, where $\Delta\alpha_k = \alpha(x_k)-\alpha(x_{k-1})$.
 
-**Definition: (Riemann-Stieltjes Integral)** A function $f$ is said to be _Riemann-integrable_ with respect to $\alpha$ on $[a,b]$, and write $f\in R(\alpha)$ on $[a,b]$, if there exists a number $A$ such that: For every $\epsilon >0$, there exists a partition $P_\epsilon$ of $[a,b]$ such that for every finer partition $P$ and every choice of points $t_k$ in $[x_{k-1},x_k]$, we have $|S(P,f,\alpha)-A|< \epsilon$. When such an $A$ exists, it is uniquely determined, and is denoted $$\int_a^bf\, d\alpha \quad\text{ or }\quad \int_a^bf(x)\,d\alpha(x).$$In other words, $$\lim_{\epsilon\to 0}S(P_\epsilon,f,\alpha) = \lim_{\epsilon\to 0}\sum_{k=1}^{n(\epsilon)}f(t_k)\Delta\alpha_k = \int_a^bf\, d\alpha,$$ by tolerating some abuse of notation.
+**Definition: (Riemann-Stieltjes Integral)** A function $f$ is said to be _Riemann-integrable_ wrt $\alpha$ on $[a,b]$, denoted $f\in R(\alpha)$ on $[a,b]$, if there exists a number $A$ s.t. $\forall\epsilon >0$, $\exists P_\epsilon$ of $[a,b]$ such that for every finer partition $P_{\delta}$, i.e., $\delta \leq \epsilon$, and $\forall t_k\in [x_{k-1},x_k]$, we have $|S(P,f,\alpha)-A|< \epsilon$ for some $A\in \mathbb{R}$. When such an $A$ exists, it is uniquely determined, and is denoted $$A= \int_a^bf\, d\alpha \quad\text{ or }\quad A= \int_a^bf(x)\,d\alpha(x).$$In other words, $$\lim_{\epsilon\to 0}S(P_\epsilon,f,\alpha) = \lim_{\epsilon\to 0}\sum_{k=1}^{n(\epsilon)}f(t_k)\Delta\alpha_k = \int_a^bf\, d\alpha = A,$$ by tolerating some abuse of notation.
 
 
 ## Reduction of Riemann-Stieltjes integral to the Riemann Integral.

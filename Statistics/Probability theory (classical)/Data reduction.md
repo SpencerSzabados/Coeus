@@ -1,9 +1,21 @@
-Given a sample $X_1,\dots,X_N$ for which we wish to make inferences about an unknown parameter $\theta$. If the sample size is large, then the observed sample $x_1,\dots,x_N$ may be hard to interpret without summarization.
+---
+doc type: Note
+authors: Spencer Szabados
+date: 2025-12-21
+tags:
+  - statistics
+  - test_statistics
+references:
+  - "[[@Casella_2001]]"
+---
+---
 
-Any [[Random samples#^1176b9|statistic]], $T(\vec{X})$, defines a form of data reduction or data summary. Data reduction in terms of a particular statistic can be thought of as a partition of the sample space $\mathcal{X}$. Let $\mathcal{T} = \{t\mid t=T(\vec{x}) \text{ for some }\vec{x}\in \mathcal{X}\}$ be the image of $\mathcal{X}$ under $T(\vec{x})$. Then $T(\vec{x})$ partitions the sample space into sets $A_t=\{\vec{x}\mid T(\vec{x})=t\}$ for some $t\in \mathcal{T}\}$. The statistics summarizes the data by reporting $T(\vec{x})=t$.
+Given a sample $\vec{X}=(X_1,\dots,X_N)\in \mathcal{X}^{N}$ for which we wish to make inferences about an unknown parameter $\theta$. If the sample size is large, then the observed sample $\vec{x}=(x_1,\dots,x_N$ may be hard to interpret without summarization.
+
+Any [[Random samples#^1176b9|statistic]], $T(\vec{X}):\mathcal{X}^{N}\to \mathbb{R}$, defines a form of data reduction or data summary. Data reduction in terms of a particular statistic can be thought of as a partition of the sample space $\mathcal{X}$. Let $\mathcal{T} = \{t\mid t=T(\vec{x}) \text{ for some }\vec{x}\in \mathcal{X}\}$ be the image of $\mathcal{X}$ under $T(\vec{x})$. Then $T(\vec{x})$ partitions the sample space into sets $A_t=\{\vec{x}\mid T(\vec{x})=t\}$ for some $t\in \mathcal{T}\}$. The statistics summarizes the data by reporting $T(\vec{x})=t$.
 
 # The sufficiency principle 
-A _sufficient statistic_ for a parameter $\theta$ is a statistic that captures all the information about $\theta$ contained in a sample.
+A _sufficient statistic_, defined below, for a parameter $\theta$ is a statistic that captures all the information about $\theta$ contained in a sample.
 
 **The sufficiency principle:** If $T(\vec{X})$ is a sufficient statistic for $\theta$, then any inference about $\theta$ should depend on the sample $\vec{X}$ only thought the value $T(\vec{X})$; that is, if $\vec{x}$ any $\vec{y}$ are two sample points such that $T(\vec{x})=T(\vec{y})$, the the inference about $\theta$ should be the same whether $\vec{X}=\vec{x}$ or $\vec{X}=\vec{y}$ is observed.
 
@@ -12,9 +24,9 @@ A _sufficient statistic_ for a parameter $\theta$ is a statistic that captures a
 
 **Example:** This can be nicely exemplified using the following situation: Consider Experimenter.1, who observes $\vec{X}=\vec{x}$ and, of course, can compute $T(\vec{X})=T(\vec{x})$. To make an inference about $\theta$ they could use the sample information of $\vec{X}=\vec{x}$ and $T(\vec{X})=T(\vec{x})$. Now consider Experimenter.2, who is not given $\vec{x}$ but only that $T(\vec{X})=T(\vec{x})$. Experimenter.2 knows $P(\vec{X}=\vec{y}|T(\vec{X}=T(\vec{x})))$ for some unknown $\vec{y}$, is a probability distribution on $A_{T(\vec{x}))} = \{\vec{y}\mid T(\vec{y}=T(\vec{x})\}$. Thus, Experiemtner.2 can use this distribution to generate a random sample $\vec{Y}$ that satisfies $P(\vec{Y}=\vec{y}\mid T(\vec{X})=T(\vec{x}))=P(\vec{X}=\vec{x}\mid T(\vec{X})=T(\vec{x}))$. Note that both events $\{\vec{X}=\vec{x}\}$ and $\{\vec{Y}=\vec{x}\}$ are subsets of the event $\{T(\vec{X})=T(\vec{x})\}$. Then, we have $$\begin{align}P_\theta(\vec{X}=\vec{x})&= P(\vec{X}=\vec{x}|T(\vec{X})\\ &=P(\vec{X}=\vec{x}|T(\vec{X})=T(\vec{x}))P_\theta(T(\vec{X})=T(\vec{x}))\\ &=P(\vec{Y}=\vec{x}|T(\vec{X})=T(\vec{x}))P_\theta(T(\vec{X})=T(\vec{x}))\\ &=P_\theta(\vec{Y}=\vec{x}).\end{align}$$Meaning $\vec{X}$ and $\vec{Y}$ have the same unconditional probability distribution. Consequently, it turns out that Experimenter.1 and Experimenter.2 both have the same knowledge of $\theta$, despite Experimenter.2 not knowing $\vec{X}=\vec{x}$. This is what it mean for a statistic to be sufficient. However, an Experimenter who calculates only sufficient statistics and later ignores the rest of the data may be placing strong faith in the assumptions of the data's model/distribution if it were not known beforehand.
 
-**Theorem:** If $p(\vec{x}|\theta)$ is the joint pdf (of pmf) of $\vec{X}$ and $q(t|\theta)$ is the pdf (or pmf) of $T(\vec{X})$, then $T(\vec{X})$ is a sufficient statistics for $\theta$, if for every $\vec{x}$ in the sample space the ratio  $p(\vec{x}|\theta)/q(T(\vec{x}|\theta)$ is constant as a function of $\theta$ (does not depend on $\theta$).
+**Theorem: (Sufficient statistic criterion)** If $p(\vec{x}|\theta)$ is the joint pdf (of pmf) of $\vec{X}$ and $q(t|\theta)$ is the pdf (or pmf) of $T(\vec{X})$, then $T(\vec{X})$ is a sufficient statistics for $\theta$, if for every $\vec{x}$ in the sample space the ratio  $p(\vec{x}|\theta)/q(T(\vec{x}|\theta))$ is constant as a function of $\theta$ (does not depend on $\theta$).
 
-Constructing a sufficient statistic from the definition is impractical, as we must first guess as to a possible from and then test it's properties. The next theorem allows us to more easily determine sufficient statistics.
+Constructing a sufficient statistic from the definition is challenging. The next theorem allows us to more easily build such sufficient statistics.
 
 **Theorem: (Factorization theorem by Halmos and Savage)** Let $f(\vec{x}|\theta)$ denote the joint pdf (or pmf) of a sample $\vec{X}$. A _statistic_ $T(\vec{X})$ is _sufficient_ for $\theta$ is and only if there exists functions $g(t|\theta)$ and $h(\vec{x})$ such that, for all sample points $\vec{x}$ and all parameter points $\theta$, $$f(\vec{x}|\theta) = g(T(\vec{x})|\theta)h(\vec{x}).$$
 ### Minimal sufficient statistics 

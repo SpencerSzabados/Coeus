@@ -15,8 +15,6 @@ references:
 
 This paper makes use of the term "tokens" but this is bait, as nothing in the paper relates to designing, performing, or handling discrete tokens created from continuous data.
 
-TODO: talk about temporal loss and how that relates to $h_t$.
-
 # Overview
 The authors in this work propose a method of training and sampling from a [[Diffusion models]] sequentially to generate long trajectories (e.g., such as in planning, or video sequences) by varying the noise schedule over the trajectory. This is related to "rolling diffusion" methods. The intuition of the idea is to only partially denoise components of trajectories that are later in time than those earlier to try and capture deterministic relationships between later and earlier actions (or some form of uncertainty).
 
