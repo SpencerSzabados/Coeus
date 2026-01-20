@@ -1,4 +1,14 @@
-Note [2022-09-04] : This method was placed in [signal processing] as that is the origin of the method, moreover, k-means clustering is primarily focused on vector quantization rather than [[Classification and clustering]] problems despite its utility in [[Overview of machine learning|machine learning]].
+---
+doc type: Note
+authors: Spencer Szabados
+date: 2022-09-04
+tags:
+  - machine_learning
+  - statistics
+  - clustering
+  - signal_processing
+---
+This method was placed in [signal processing] as that is the origin of the method, moreover, k-means clustering is primarily focused on vector quantization rather than [[Classification and clustering]] problems despite its utility in [[Overview of machine learning|machine learning]].
 
 ---
 

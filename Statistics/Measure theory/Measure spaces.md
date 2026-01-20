@@ -1,13 +1,14 @@
 ---
 doc type: Note
 authors: Spencer Szabados
-date: 
+date:
 tags:
   - statistics
   - measure_theory
 references:
   - "[[@Schervish_1995]]"
-  -  [[@Ryff_1970]]
+  - https://www.stats.ox.ac.uk/~etheridg/integration.pdf
+  - "[[@Ryff_1970]]"
 ---
 ---
 # Overview
@@ -21,7 +22,9 @@ We begin with the definition of a measure and then will spend some time talking 
   3) For all countable collections $\{B_i\}_{i\in I}$ of pairwise disjoint sets, $\mu\left(\bigcup_{i\in I} B_i\right) = \sum_{i\in I}\mu(B_i)$.
 The pair $(X,\mathcal{B})$ is referred to as a measurable space.  ^7ac46e
 
-**Definition: (Measure space)** A measure space is a triple $(X,\mathcal{B}, \mu)$ where $X$ is a set, $\mathcal{B}$ is a [[Fundamentals of probability theory#^9dcf42|sigma algebra]] on the set $X$, and $\mu$ is a measure on $(X,\mathcal{B})$, e.g,. [[Fundamentals of probability theory#^2f36d7|finite probability spaces]]. ^26a5cd
+**Example:** The collection of sets that are measurable under the [[Lebesgue integration#^c700cf|Lebesgue measure]] form a [[Fundamentals of probability theory#^9dcf42|sigma algebra]] by construction of the measure and it's properties [[Lebesgue integration#^2849f0]]. 
+
+**Definition: (Measure space)** A measure space is a triple $(X,\mathcal{B}, \mu)$ where $X$ is a set, $\mathcal{B}$ is a [[Fundamentals of probability theory#^9dcf42|sigma algebra]] on the set $X$, and $\mu$ is a measure on $(X,\mathcal{B})$, e.g,. [[Fundamentals of probability theory#^2f36d7|finite probability spaces]] which reduce to properties of [[Sequences and Limits#^d3b97d|convergence of series]]. ^26a5cd
 
 If $(X,\mathcal{B},\mu)$ is a measure space and $\mu(X)=1$, then $\mu$ is called a [[Fundamentals of probability theory#^0d5a58|probability]] (probability measure) and $(X,\mathcal{B},\mu)$ is also called a _probability space_. ^535f6f
 
